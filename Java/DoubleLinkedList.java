@@ -1,7 +1,7 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class DoublyLinkedList<T> implements Iterable<T> {
+public class DoubleLinkedList<T> implements Iterable<T> {
 
     // Node class to represent a node in the doubly linked list
     private static class Node<T> {
