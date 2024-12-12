@@ -120,36 +120,4 @@ public class DoubleLinkedList<T> implements Iterable<T> {
         System.out.println("null");
     }
 
-    public static void main(String[] args) {
-        DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
-        
-        // Add elements
-        list.addFirst(10);
-        list.addLast(20);
-        list.addLast(30);
-        list.addFirst(5);
-
-        // Print the list
-        System.out.print("List: ");
-        list.printList(); // Output: 5 <-> 10 <-> 20 <-> 30 <-> null
-
-        // Remove elements
-        System.out.println("Removed First: " + list.removeFirst()); // Output: 5
-        System.out.println("Removed Last: " + list.removeLast());   // Output: 30
-
-        // Check if element exists
-        System.out.println("Contains 10? " + list.contains(10)); // Output: true
-        System.out.println("Contains 40? " + list.contains(40)); // Output: false
-
-        // Print the updated list
-        System.out.print("Updated List: ");
-        list.printList(); // Output: 10 <-> 20 <-> null
-
-        // Iterate using for-each
-        System.out.print("Iterating: ");
-        for (int num : list) {
-            System.out.print(num + " ");
-        }
-        // Output: Iterating: 10 20
-    }
 }
