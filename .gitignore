@@ -1,3 +1,21 @@
 C/Rough.c
 C/Rough.exe
 .vscode/
+
+# Ignore IntelliJ IDEA project files
+Java/.idea/
+Java/*.iml
+
+# Ignore build output directories
+Java/out/
+Java/build/
+Java/target/
+
+# Ignore compiled files
+Java/**/*.class
+
+# Ignore temporary and system-specific files
+Java/*.log
+Java/*.tmp
+Java/*.bak
+Java/.DS_Store
